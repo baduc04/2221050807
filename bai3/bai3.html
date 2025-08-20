@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee><img src="c:\Users\ADMIN\Pictures\Saved Pictures\tải xuống (5).jpg" alt=""></marquee>
+    <h1>Bai 3</h1>
+    <!-- danh sách list -->
+     <!-- có thứ tự ol,li -->
+      <p>danh sach cac cong viec vao buoi sang</p>
+      <ol>
+        <li>thuc day</li>
+        <li>danh rang</li>
+        <li>an sang</li>
+        <li>di hoc</li>
+        <li>giai lao</li>
+      </ol>
+      <!-- thẻ ul k có thứ tự ul ,li-->
+       <ul>
+        <li>python</li>
+        <li>Java</li>
+        <li>php</li>
+        <li>c#</li>
+        <li>javaScrit   </li>
+       </ul>
+       <br>
+       <h1>Form</h1>
+       <form>
+        <div>
+             <b>Ho va Ten:</b>
+              <input type="text" name="hoten" placeholder="nhap ten vao day">
+        </div>
+        <br>
+        <div>
+             <b>Năm:</b>
+              <input type="text" name="nam" value="2025" readonly>
+              <!-- readonly k thể nhập -->
+        </div>
+        <br>
+        <div>
+             <b>Giới thiệu chi tiết về bản thân:</b>
+              <textarea name="gioithieu">Nhập giới thiệu</textarea>
+        </div>
+        <br>
+        <div>
+             <b>Email:</b>
+              <input type="email" name="hoten" placeholder="dang @gmail.com">
+        </div>
+        <br>
+        <div>
+             <b>So dien thoai:</b>
+               <!-- số đầu tiên là 0
+               số thứ 2 là 0,3,9 
+               tám số cuối từ 0-9 -->
+              <input name="telephone" type="tel" placeholder="Dạng số:09xxxxxx"
+              required pattern="([0]{1}([0,3,9]{1})([0-9]){8})">
+              <!-- required là k nhập đc-->
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="gioitinh" value="nam">Nam <br>
+            <input type="radio" name="gioitinh" value="nam">Nữ <br>
+            <input type="radio" name="gioitinh" value="nam">khong xac dinh <br>
+        </div>
+        <br>
+        <div>
+            <b>Sở thích</b> <br>
+            Game: <input type="checkbox" name="so thich" value="game"> <br>
+            Game: <input type="checkbox" name="so thich" value="music"> <br>
+            Game: <input type="checkbox" name="so thich" value="sport"> <br>
+        </div>
+        <br>
+        <div>
+            <b>Trình duyệt ưa thích </b> <br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="internet explore">
+                <option value="firebox">
+                <option value="chrom">
+                <option value="opera">
+            </datalist>
+        <br>
+        <select name="browsers">
+           <option value="internet explore">internet explore</option>
+                <option value="firebox">firebox</option>
+                <option value="chrom">chrom</option>
+                <option value="opera">opera</option>
+        </select>
+        </div>
+        <div>
+            0<input type="range" value="20">100
+        </div>
+        <div>
+            <b>Tuổi</b><br>
+            <input type="number" name="tuoi">
+        </div>
+        <div>
+            <input type="button" value="xác nhận">
+        </div>
+        <br>
+        <div>
+            <input type="date" value="ngày tháng năm sinh">
+        </div>
+        <br>
+        <div>
+            <b>màu sắc yêu thích</b>
+            <input type="color" name="" id="">
+        </div>
+         <br>
+        <div>
+            <b>chọn ảnh đại diện</b>
+            <input type="file">
+        </div>
+         <br>
+        <div>
+        <b>mật khẩu</b>
+        <input type="password">
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+         <br>
+        <div>
+            <input type="submit">
+        </div>
+       </form>
+       <iframe src="c:\Users\ADMIN\Videos\Bản ghi màn hình\Quay màn hình 2025-04-11 152651.mp4" frameborder="0"></iframe>
+       <video controls width="560" height="315">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="video/mp3.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>
