@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+ul {
+    margin: 0;
+}
+.danhmuc {
+    background-color: #2fa4e7;
+    padding: 15px 20px;
+}
+.danhmuc-danhsach {
+    display: flex;
+    padding: 0;
+    list-style: none;
+     /* /* list-style: ; * bỏ dấu chấm trong thẻ li*/
+}
+.danhmuc-muc {
+    margin-right: 20px;
+}
+.danhmuc-lienket {
+    color: white;
+    text-decoration: none;
+     /* text-decoration: ; bỏ dấu gạch chân trong thẻ a */
+    font-size: 16px;
+    font-weight: bold;
+}
+.danhmuc-lienket:hover {
+    color: #ddd;
+     /* hover di chuyển chuột chuyển màu */
+}
+.logo {
+background-color:#2fa4e7 ;
+    padding: 5px;
+    display: flex;
+}
+.logo-humg {
+    display: flex;
+    background-color: white;
+    width: 25%;
+}
+.logo img {
+    height: 65px;
+    width: 60px;
+    margin: 5%;
+}
+.logo-word {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.name {
+    color: #004b9b; 
+}
+.name1 {
+    color: #777;
+}
+
+main {
+    display: flex;
+}
+.noidung-trai {
+    width: 80%;
+    border-radius: 10px 10px 0px 0px;
+}
+.noidung-phai {
+    width: 20%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.tieude {
+    background: #2fa4e7;
+    color: white;
+    padding: 10px 15px;
+}
+.tintuc-danhsach {
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet {
+    height: 200px;
+    width: 32%;
+    position: relative;
+    display: inline-block;
+}
+.baiviet img {
+    height: 200px;
+    width: 100%;
+}
+.chutren {
+    position: absolute;
+    background-color: rgba(207,232,246, 0.7);
+    width: 100%;
+    text-align: right;
+}
+.chuduoi {
+    position: absolute;
+    background-color: rgba(207,232,246, 0.7);
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+}
+.tieude-thongbao {
+    display: flex;
+    padding: 10px;
+}
+.thongbao-trai {
+    width: 30%;
+    text-align: left;
+}
+.thongbao-trai img {
+    width: 100%;
+    height: 200px;
+}
+.thongbao-trai i{
+    justify-content: flex-end;
+    display: flex;
+}
+.thongbao-trai a{
+    text-decoration: none;
+}
+.thongbao-phai {
+    width: 70%;
+    padding-left: 10px;
+    display: flex;
+}
+.chutrai{
+    width: 80%;
+}
+.chuphai{
+    width: 20%; 
+}
+.huongdan1{
+    display: flex;
+}
+.right-content{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.login{
+    color: white;
+    background-color: #37a7e8;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 5px 5px 0 0;
+}
+.form{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-row{
+    padding: 6px 0;
+    display: flex;
+}
+
+.form-forget{
+    color: #37a7e8;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-login{
+    margin: 4px 0;
+    background-color: #37a7e8;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+}
+.form-micro{
+    background-color: #0078d4;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+.setup {
+    margin-top: 35px;
+    border-radius: 10px;
+}
+.setup-mobile {
+    border-radius: 10px 10px 0 0;
+    background-color: #37a7e8;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+}
+.setup-app {
+    margin: 20px 20px;
+}
+.setup-apps {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    padding: 4px 30px;
+    margin: 20px;
+}
+.setup-qr {
+    margin: 20px auto;
+    width: 150px;
+}
+.setup-qr img{
+    width: 100%;
+    height: 150px;
+}

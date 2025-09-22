@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài JavaScript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("HELLO WORLD !" +"<br>")
+
+        // Để khai báo biến JS dùng let hoặc var
+        // Cú pháp : let tên biến = giá trị
+        // Để nối chuỗi JS dùng dấu +
+
+        let hoten = "Dao Ba Duc" +"<br>";
+        document.writeln(hoten);
+
+        // let soThuNhat = 10;
+        // let soThuHai = "5";   
+        // let ketQua = 0;
+        // Phép cộng +
+        // Phép trừ -
+        // Phép nhân *
+        // Phép Chia /
+
+        // ketQua = soThuNhat + soThuHai;
+        // soThuNhat %= 3;
+        // += viết tắt của phép cộng
+        // -= viết tắt của phép trừ
+        // %= chia lấy phần dư
+        let soThuNhat = 10;
+        let soThuHai = "5";   
+        let ketQua = true;
+        // == != === !== ! > < >= <= 
+        document.writeln(soThuNhat === soThuHai); 
+
+        let thongTinSInhVien = {
+            hoten: "Dao Ba Duc",
+            mssv : 2221050807  , 
+            gioiTinh : true,
+            tuoi:21,
+            lop:"TTĐH",
+            diachi : {
+            thanhPho : "Hà Nội",
+            phuong : "Đông Ngạc",
+            duong : "abc",
+            soNHa : 41
+        }
+        }
+        // document.writeln("Xin chào:" + thongTinSInhVien.hoten + thongTinSInhVien.tuoi);
+        let diaChiNhaToi = {
+            thanhPho : "Hà Nội",
+            phuong : "Đông Ngạc",
+            duong : "abc",
+            soNHa : 41
+        }
+         thongTinSInhVien.diachi = diaChiNhaToi;
+
+         document.writeln("Xin chào:" + thongTinSInhVien.hoten + thongTinSInhVien.diachi.phuong + "" + thongTinSInhVien.diachi.thanhPho );
+
+        
+        let namNay =2025;
+        document.writeln("Duc" + thongTinSInhVien.hoten + "Sinh năm" + (namNay - thongTinSInhVien.tuoi));
+
+    </script>
+</body>
+</html>
