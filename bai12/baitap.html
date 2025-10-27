@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+</head>
+<body>
+    <h2>Tính chỉ số BMI</h2>
+    <div>
+        Cân nặng (kg): <input type="number" id="canNang" placeholder="Nhập cân nặng">
+    </div>
+    <div>
+        Chiều cao (m): <input type="number" id="chieuCao" placeholder="Nhập chiều cao">
+    </div>
+    <div>
+        <button onclick="xemBMI()">Tính BMI</button>
+    </div>
+    <div>
+        Kết quả: <input type="text" id="ketQua" placeholder="Kết quả BMI" readonly>
+    </div>
+    <div>
+        <img id="anhBMI" src="" alt="">
+    </div>
+
+    <script>
+        function xemBMI(){
+            let canNang = parseFloat(document.getElementById('canNang').value);
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            tinhBMI(canNang, chieuCao);
+        }
+
+        function tinhBMI(canNang, chieuCao){
+            if (kiemTraHopLe(canNang, chieuCao)){
+                let bmi = canNang / (chieuCao * chieuCao);
+                document.getElementById('ketQua').value = bmi.toFixed(2);
+                hienThiHinhAnh(bmi);
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
