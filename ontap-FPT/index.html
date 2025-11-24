@@ -34,7 +34,11 @@
           <div class="container">
             <div>
                 <div style="display: flex; justify-content: center;"></div>
+                <div>
                <img class="banner" src="image/anh2.jpg" alt="">
+               <iframe id="trailer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+                <button onclick="xemngay()">Xem ngay</button>
+               </div>
                <img class="qc" src="image/anh4.png" alt="">
             </div>
           </div>
@@ -328,6 +332,16 @@
         </div>
     </div>
     </div>
+    <script>
+      function viewTrailer(videoUrl) {
+            // Ẩn banner
+            document.getElementById("xemVideo").style.display = "none";
+            // Cập nhật src cho iframe và hiển thị nó
+            let trailerElement = document.getElementById("trailer");
+            trailerElement.src = videoUrl;
+            trailerElement.style.display = "block"; // Hiện iframe
+        }
+    </script>
    </main>
    <footer>
 
